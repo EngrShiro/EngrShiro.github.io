@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>White Hat | Intelligence</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" href="images/logo.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>WhiteHat</strong> <span>Intelligence</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="files/resume.pdf" target="_blank">About Me</a></li>
+							<li><a href="index.html#portfolio">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/hotel.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Hotel Bookings Statistical Report</h1>
+							</header>
+							<div class="content">
+								<p>Explores booking patterns, cancellation rates, and seasonal <br />
+								trends to improve occupancy forecasting.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Overview</h2>
+									</header>
+									<p>This end-to-end Python data analysis project investigates over 119,000 hotel booking records across a city hotel and a resort hotel, spanning July 2015 to August 2017. The analysis was structured around three high-impact business questions: how seasonality shapes demand, which customer segments maximize revenue potential, and what factors statistically predict booking cancellations. Delivered as a professional business report, it bridges the gap between raw booking data and actionable revenue management strategy.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/question.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Business Question</h3>
+											</header>
+											<p>With a cancellation rate of 37.04% (44,224 out of 119,390 bookings) and $25.99M in total revenue at stake, hotel operators needed to understand not just what was happening in their bookings data — but why. Without insight into the behavioral and operational drivers of cancellations, revenue leakage goes unaddressed and pricing strategies remain reactive. This analysis was designed to quantify those drivers, segment customers by revenue reliability, and give hotel managers a data-grounded framework for reducing cancellation risk and optimizing yield.</p>											
+										</div>
+									</div>
+								</section>								
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Key Insights & Features</h2>
+									</header>																										
+										<dl>
+											<dt>Core Metrics Analyzed</dt>
+											<span class="image left"><img src="images/hotel-1.png" alt="" /></span> 
+											<dd>
+												<p>Total Bookings (119,390), Total Revenue ($26.00M), Average Booking Value ($217.74), Cancellation Rate (37.04%), and Average Waiting Days (2.32) — establishing a full operational baseline before diving into root-cause analysis.</p>
+												<br />
+											</dd>
+											<dt>Seasonality & Demand Patterns</dt>
+											<span class="image fit"><img src="images/hotel-2.png" alt="" /></span> 
+											<dd>
+												<p>Monthly booking trend charts reveal peak demand between April and August (May as the single highest month) and a sharp year-end decline — with City Hotels peaking on Fridays for business travel and Resort Hotels spiking on weekends for leisure, confirming distinct demand profiles requiring differentiated pricing strategies.</p>
+											</dd>									
+											<dt>Revenue Potential Segmentation</dt>
+											<span class="image fit"><img src="images/hotel-3.png" alt="" /></span>  
+											<dd>
+												<p>A custom Revenue Potential score (Average Revenue × Booking Volume × Cancellation Rate) ranks customer types, market segments, and distribution channels — identifying Transient guests ($11.5M potential) and OTA/TA/TO channels ($12.3M combined) as volume leaders, while Contract customers are flagged as the highest revenue-per-booking and most stable segment.</p>
+											</dd>
+											<dt>Cancellation Predictor Modeling</dt>
+											<span class="image fit"><img src="images/hotel-4.png" alt="" /></span> 
+											<dd>
+												<p>Logistic regression models with ANOVA validation quantify the statistical significance of five cancellation drivers: lead time (odds increase 1.01× per day), previous cancellations (odds multiply 7.85× per prior cancellation), ADR (odds increase 100.21× per 100-unit rate increase), special requests (odds reduce to 0.48× per request), and repeat guest status (14.49% cancellation rate vs. 37.79% for non-repeat guests).</p>
+											</dd>
+											<dt>Visualizations Produced</dt> 
+											<dd>
+												<p>100% area charts for cancellation vs. non-cancellation distributions across all predictor variables, stacked bar charts for repeat guest loyalty comparison, monthly clustered bar charts for year-over-year demand, and horizontal bar charts for revenue potential by segment — all produced in Python with matplotlib and seaborn.</p>
+											</dd>
+											<dt>Analytical Approach</dt> 
+											<dd>
+												<p>Multi-layered — descriptive (demand and revenue patterns), diagnostic (cancellation driver identification via EDA), and predictive (logistic regression models with odds ratios and probability curves for each significant variable).</p>
+											</dd>
+										</dl>
+								</div>
+							</section>
+						
+						<!-- Four -->
+							<section id="four">
+								<div class="col-6 col-12-medium">
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Tool</th>
+													<th>Usage</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Python</td>
+													<td>End-to-end analysis environment</td>
+												</tr>
+												<tr>
+													<td>pandas & numpy</td>
+													<td>Data loading, cleaning, feature engineering</td>
+												</tr>
+												<tr>
+													<td>matplotlib & seaborn</td>
+													<td>EDA visualizations - area charts, bar charts, etc.</td>
+												</tr>
+												<tr>
+													<td>scipy & statsmodels ANOVA testing, logistic regressions modeling</td>
+													<td>Source data preparation</td>
+												</tr>
+												<tr>
+													<td>Jupyter Notebook</td>
+													<td>Structured analytical workflow</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</section>
+						
+						<!-- Five -->
+							<section id="five">
+								<div class="inner">
+									<header class="major">
+										<h2>Impact & Value</h2>
+									</header>																		
+									<p>This project demonstrates the full analyst workflow — from raw data cleaning and feature engineering through to statistical modeling and business recommendation — entirely in Python, without reliance on BI tools. The logistic regression findings translate directly into operational policy: requiring deposits for bookings with lead times over a threshold, flagging guests with prior cancellation histories for stricter terms, and designing loyalty incentives around the measurable 23-point gap in cancellation probability between repeat and non-repeat guests. The structured business report format ensures findings are accessible to both technical stakeholders and non-technical hotel management — making this a strong example of analytics that drives real revenue protection decisions.</p>
+								</div>
+							</section>
+						
+						<!-- Six -->
+							<section id="six">
+								<div class="inner">
+									<header class="major">
+										<h2>Check out the Full Report here:</h2>
+									</header>
+									<ul class="actions">
+										<li><a href="files/python.pdf" class="button next" target="_blank">View Report</a></li>
+									</ul>									
+								</div>
+							</section>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<!-- Call to Action -->
+									<h1>Let's Work Together!</h1>
+									<p>I help businesses turn raw data into actionable insights, dashboards, and data-driven strategies.</p>
+									<ul class="alt">
+										<li>Data Analysis & Visualization</li>
+										<li>Power BI & Dashboard Development</li>
+										<li>Business Intelligence Solutions</li>
+									</ul>
+									<ul class="actions">
+										<li><a href="index.html#portfolio" class="button next scrolly">Portfolio</a></li>
+										<li><a href="files/resume.pdf" class="button icon solid fa-download" target="_blank">Resume</a></li>
+									</ul>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="mailto:cientosjustine@gmail.com">cientosjustine@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>+63 956-175-9646</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Bacolod City, Negros Occidental<br />
+										Philippines</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">								
+								<li><a href="https://www.facebook.com/justine.cientos" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jvcientos" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2026 Justine Cientos · White Hat | Intelligence. All Rights Reserved.</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

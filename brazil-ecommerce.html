@@ -1,0 +1,254 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>White Hat | Intelligence</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" href="images/logo.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>WhiteHat</strong> <span>Intelligence</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="files/resume.pdf" target="_blank">About Me</a></li>
+							<li><a href="index.html#portfolio">Portfolio</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/e-commerce.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>Brazilian E-Commerce</h1>
+							</header>
+							<div class="content">
+								<p>Examines sales performance, customer behavior, and delivery <br />
+								metrics within Brazil’s e-commerce market.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Overview</h2>
+									</header>
+									<p>This MySQL-based analytics project transforms a raw Brazilian e-commerce dataset into a structured, multi-layered intelligence system — delivering monthly KPI reporting, customer cohort retention analysis, geographic revenue ranking, and automated anomaly detection through a suite of purpose-built SQL views. Each view was engineered to answer a distinct business question, from tracking delivery performance over time to flagging statistically abnormal revenue spikes or dips. The project demonstrates advanced SQL architecture skills by producing clean, BI-ready outputs that can be directly consumed by dashboarding tools without additional transformation.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/question.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Business Question</h3>
+											</header>
+											<p>E-commerce operations generate enormous volumes of transactional data, but raw tables alone cannot answer the questions that drive business decisions: Are monthly revenues trending up or down? Are new customers coming back after their first purchase? Which cities and product categories generate the most revenue — and for which customer segments? Are there unusual spikes or drops in revenue that require immediate attention? Without structured, pre-aggregated SQL views, answering these questions requires time-consuming, error-prone ad hoc queries. This project solves that problem by building a reusable, modular analytics layer directly in the database.</p>											
+										</div>
+									</div>
+								</section>								
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Key Insights & Features</h2>
+									</header>																										
+										<dl>
+											<dt>Monthly KPI Tracking (v_monthly_kpis)</dt>
+											<span class="image fit"><img src="images/ecommerce-1.png" alt="" /></span> 
+											<dd>
+												<p>Core operational metrics aggregated by month — Total Revenue, Average Order Value, Delivered Orders, Cancelled Orders, Late Delivered Orders, % Delivered, % Late Delivered, and Average Review Score — revealing consistent delivery rates above 96% in peak months and a strong correlation between late deliveries and review score drops.</p>
+											</dd>
+											<span class="image fit"><img src="images/ecommerce-2.png" alt="" /></span>
+											<div class="row">
+												<div class="col-6 col-12-medium">
+													<dt>Cohort Retention Analysis (v_cohort_retention)</dt> 
+													<dd>
+														<p>A cohort table tracking customer retention at M+1, M+2, and M+3 months after first purchase — surfacing that repeat purchase rates remain below 1% across all cohorts, signaling a critical opportunity for loyalty and re-engagement strategy improvements.</p>
+													</dd>
+												</div>
+												<div class="col-6 col-12-medium">								
+													<dt>Top-3 Revenue Ranking by Segment (v_topn_per_segment)</dt> 
+													<dd>
+														<p>SQL functions (RANK/DENSE_RANK) applied across customer city and product category combinations to identify the highest-grossing product categories per geographic market — enabling hyper-local inventory and marketing prioritization without manual filtering.</p>
+													</dd>
+												</div>
+											</div>
+											<span class="image fit"><img src="images/ecommerce-3.png" alt="" /></span>
+											<div class="row">
+												<div class="col-6 col-12-medium">
+													<dt>Revenue Anomaly Detection (v_anomaly_flags)</dt> 
+													<dd>
+														<p>A rolling 7-day moving average paired with Z-score calculations flags each day as NORMAL, SPIKE, or DIP — creating an automated early-warning system for revenue irregularities that would otherwise require manual monitoring or separate BI tooling.</p>
+													</dd>
+												</div>
+												<div class="col-6 col-12-medium">
+													<dt>BI-Ready Export View (v_export_for_bi)</dt> 
+													<dd>
+														<p>A clean, fully joined stakeholder table combining order details, product categories, pricing, freight values, order status, review scores, customer location, and seller location — structured for direct import into Power BI, Tableau, or Excel without additional transformation steps.</p>
+													</dd>
+												</div>
+											</div>
+													<dt>Analytical Approach</dt> 
+													<dd>
+												<p>Descriptive (monthly KPI trends), diagnostic (cohort drop-off and delivery performance analysis), and detection-based (statistical anomaly flagging via rolling Z-scores) — all implemented purely in SQL using CTEs, window functions, subqueries, and aggregate logic.</p>
+											</dd>
+										</dl>
+								</div>
+							</section>
+						
+						<!-- Four -->
+							<section id="four">
+								<div class="col-6 col-12-medium">
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Tool</th>
+													<th>Usage</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>MySQL</td>
+													<td>Primary analytics environment</td>
+												</tr>
+												<tr>
+													<td>SQL functions</td>
+													<td>rank, moving averages and anomaly detection</td>
+												</tr>
+												<tr>
+													<td>CTEs & Subqueries</td>
+													<td>Modular query architecture for cohort and KPI calculations</td>
+												</tr>
+												<tr>
+													<td>Aggregate Functions</td>
+													<td>SUM, AVG, COUNT for revenue, review metrics, etc.</td>
+												</tr>
+												<tr>
+													<td>SQL views</td>
+													<td>Reusable, modular analytics layer for BI consumption</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</section>
+						
+						<!-- Five -->
+							<section id="five">
+								<div class="inner">
+									<header class="major">
+										<h2>Impact & Value</h2>
+									</header>																		
+									<p>This project demonstrates a skill that most analysts overlook: the ability to build analytics infrastructure, not just run queries. By delivering five purpose-built SQL views, the project creates a reusable analytics layer that any BI tool can connect to directly — eliminating the need to re-write logic for every stakeholder request. The anomaly detection view alone provides a production-ready alerting foundation, while the cohort retention view gives leadership the data needed to justify investment in customer loyalty programs. For any role involving data engineering, analytics engineering, or advanced SQL, this project makes a strong case that you can architect data solutions from the ground up — not just retrieve them.</p>
+								</div>
+							</section>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<!-- Call to Action -->
+									<h1>Let's Work Together!</h1>
+									<p>I help businesses turn raw data into actionable insights, dashboards, and data-driven strategies.</p>
+									<ul class="alt">
+										<li>Data Analysis & Visualization</li>
+										<li>Power BI & Dashboard Development</li>
+										<li>Business Intelligence Solutions</li>
+									</ul>
+									<ul class="actions">
+										<li><a href="index.html#portfolio" class="button next scrolly">Portfolio</a></li>
+										<li><a href="files/resume.pdf" class="button icon solid fa-download" target="_blank">Resume</a></li>
+									</ul>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="mailto:cientosjustine@gmail.com">cientosjustine@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>+63 956-175-9646</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Bacolod City, Negros Occidental<br />
+										Philippines</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">								
+								<li><a href="https://www.facebook.com/justine.cientos" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jvcientos" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2026 Justine Cientos · White Hat | Intelligence. All Rights Reserved.</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
