@@ -85,9 +85,9 @@ To help organizations solve complex business questions through data and deliver 
 
 ## 📬 Contact
 
-- Email: your-email@example.com
-- LinkedIn: your-linkedin-profile
-- Portfolio Website: your-github-pages-link
+- Email: cientosjustine@gmail.com
+- LinkedIn: [Let's Connect!](https://www.linkedin.com/in/jvcientos)
+- Portfolio Website: [View my Website!](https://engrshiro.github.io)
 
 ---
 
