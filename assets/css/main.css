@@ -3950,3 +3950,37 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+/* White Hat Intelligence Brand Colors */
+
+.text-white {
+    color: #E9F0F3 !important;
+}
+
+.text-navy {
+    color: #0B2C50 !important;
+}
+
+.text-steel {
+    color: #1A4A6D !important;
+}
+
+.text-data-blue {
+    color: #1D6690 !important;
+}
+
+.text-cyan {
+    color: #00C6FF !important;
+}
+
+.text-cyan-light {
+    color: #9BF1FF !important;
+}
+
+.text-glow {
+    color: #3BE3FB !important;
+}
+
+.text-silver {
+    color: #90A2B2 !important;
+}
