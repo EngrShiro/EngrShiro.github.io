@@ -70,7 +70,7 @@
 											Your browser does not support the video tag.
 										</video>
 									</div>	
-									<p>This Power BI dashboard delivers a comprehensive view of emergency room operations across two fiscal years — tracking 4K patient visits, a 49.72% admission rate, and performance metrics including average wait time and patient satisfaction across demographic segments and referral pathways. Designed for hospital administrators and ER department heads, it surfaces demand patterns, patient population characteristics, and departmental referral flows to support capacity planning and service delivery decisions. The dashboard transforms raw ER encounter data into a clinically and operationally actionable intelligence tool.</p>
+									<p>This five-page Power BI dashboard answers the operational questions hospital administrators actually lose sleep over — from identifying where the biggest performance risks are right now, to when and where staffing gaps exist, to whether any patient group is being systematically underserved. Built on ER encounter data, it goes beyond surface-level volume reporting to surface counterintuitive findings: wait time improved, but the truly dissatisfied patient count didn't move; the department with the shortest wait has the lowest satisfaction score; and one care team carries a workload nearly 18 times larger than the other. Each page is anchored to a specific business question, making this a decision-support tool — not a reporting deck.</p>
 								</div>
 							</section>
 
@@ -85,7 +85,7 @@
 											<header class="major">
 												<h3>Business Question</h3>
 											</header>
-											<p>Emergency departments operate under constant pressure to balance patient volume, wait times, admission rates, and resource allocation — often without a consolidated view of who is coming in, when demand peaks, where patients are being referred, and how satisfied they are with the experience. A 49.72% admission rate means roughly half of all ER visits result in inpatient admission, placing significant downstream pressure on hospital bed capacity and specialist departments. Without visibility into age-group demand patterns, racial demographics, and referral volumes by department, ER leadership cannot make informed decisions about staffing, triage protocols, or inter-departmental resource sharing.</p>											
+											<p>Emergency departments generate enormous operational data — visits, admissions, wait times, referrals, satisfaction scores — but the relationships between these metrics are rarely straightforward. A drop in average wait time does not automatically translate to a drop in dissatisfied patients. A spike in senior patient share (+10.2% MoM) has staffing and care capacity implications that a simple headcount view won't reveal. And a care team workload imbalance nearly 18× between teams is a burnout and retention risk hiding inside an aggregate average. Without a structured, multi-dimensional view that challenges first assumptions rather than confirming them, ER leadership makes resource and policy decisions based on instinct — and the data in this dashboard pushed back on intuition at almost every page.</p>											
 										</div>
 									</div>
 								</section>								
@@ -98,30 +98,34 @@
 										<h2>Key Insights & Features</h2>
 									</header>																										
 										<dl>
-											<span class="image fit"><img src="images/emergency-room.png" alt="" /></span>
-											<dt>Core KPIs Tracked</dt> 
+											<dt>ER Overview Page — Operational Baseline with Anomaly Detection</dt> 
+											<span class="image fit"><img src="images/er-1.png" alt="" /></span>
 											<dd>
-												<p>Total Visits (4K), Total Admitted (2K), Admission Rate (49.72%), Average Wait Time (35.03 minutes), and Average Satisfaction Score (5.45) — providing an immediate operational health snapshot that ER managers can act on without drilling further.</p>
+												<p>Tracks Total Visits (471, +1.1% MoM), Total Admissions (247, +4.7% MoM), Avg Satisfaction (5.31, +8.2% MoM), Admission Rate (50.04%), and % Satisfied Patients (45.61%). A monthly volume trend line with a 6-month rolling average ±2 standard deviation band flags volume anomalies — identifying unusual demand spikes that fall outside expected variation and require staffing response.</p>
 											</dd>
-											<dt>Monthly Visit Trend w/ Forecast</dt> 
+											<dt>Staff Planning Page — Arrival Heatmap for Shift Optimization</dt> 
+											<span class="image fit"><img src="images/er-2.png" alt="" /></span>
 											<dd>
-												<p>A line chart tracks monthly ER volume from May 2023 through Dec 2023, with a forecasted confidence band extending into early 2024 — revealing a cyclical demand pattern peaking at 506 visits (Jun 2023) and a mean baseline of approximately 481, enabling proactive staffing for recurring high-demand periods.</p>
+												<p>A 7-day × 24-hour patient arrival heatmap reveals that demand is not evenly distributed — Friday mornings and Saturday nights show the sharpest peaks — giving shift planners the data to realign rosters around actual arrival patterns rather than assumed ones. Avg Wait Time (34.05 min, -2.9% MoM) is broken down by department and patient type (Outpatient: 35.55 min vs. Inpatient: 34.97 min), with Neurology (36.80 min) and Physiotherapy (36.57 min) as the highest-wait departments.</p>
 											</dd>									
-											<dt>Department Referral Analysis</dt> 
+											<dt>Patient Demographics Page — Equity & Capacity Risk Signals</dt> 
+											<span class="image fit"><img src="images/er-3.png" alt="" /></span>
 											<dd>
-												<p>A horizontal bar chart ranks seven downstream departments by ER referral volume — General Practice leading at 874 referrals, followed by Orthopedics (463) and Physiotherapy (134) — giving department heads the data to anticipate inter-departmental patient load and resource pressure from the ER.</p>
+												<p>Avg Patient Age (38.73), % Pediatric (23.57%, +4.6% MoM), and % Senior (18.68%, +10.2% MoM) tracked with MoM variance. Age and race demographic bar charts, a gender donut (Male 51.05%, Female 48.69%, Nonbinary 0.26%), and a race × gender admission rate matrix surface that Asian Nonbinary patients show an 80% admission rate — an outlier with implications for both care equity review and capacity planning for specific demographic needs.</p>
 											</dd>
-											<dt>Age Group Distribution</dt> 
+											<dt>Department Referrals Page — Pareto Concentration & Workload Imbalance</dt> 
+											<span class="image fit"><img src="images/er-4.png" alt="" /></span>
 											<dd>
-												<p>A column chart segments ER visits across six age groups — Adults 36–55 (1,107) and Seniors 56–75 (1,089) accounting for the two highest volumes — informing decisions around specialist availability, triage priority protocols, and targeted community health interventions for middle-to-older age populations.</p>
+												<p>Total Referrals (205, +6.2% MoM), Referral Rate (43.52%), and a Pareto chart confirm that General Practice (1,840) and Orthopedics (995) absorb the critical majority of ER referrals — two departments where specialist capacity investment delivers maximum throughput impact. A care team workload comparison reveals Team Alpha handling 8.74K visits versus Team Bravo's 0.48K — an 18× imbalance that flags a near-term burnout and retention risk requiring immediate rebalancing.</p>
 											</dd>
-											<dt>Patient Demographic Profile</dt> 
+											<dt>Patient Satisfaction Page — The Insight That Challenged the Narrative</dt> 
+											<span class="image fit"><img src="images/er-5.png" alt="" /></span>
 											<dd>
-												<p>A racial distribution bar chart and a gender donut chart (Male 50.67%, Female 49.15%, Non-Binary 0.18%) provide equity-aware visibility into who the ER is serving — essential for hospitals navigating health disparity reporting, DEI compliance, and culturally competent care initiatives.</p>
+												<p>Avg Satisfaction (5.31/10), Satisfied Patients (59, +13.5% MoM), and Dissatisfied Patients (54, 0.0% change) tell a more complex story than the headline improvement suggests — the gain came from shifting lukewarm patients, not from recovering the truly unhappy. Satisfaction by department reveals that Renal has the shortest wait yet the lowest score, while Gastroenterology has a longer wait yet the highest score — disconfirming wait time as the primary satisfaction driver and pointing toward communication and care quality as the real levers.</p>
 											</dd>
-											<dt>Year Toggle</dt> 
+											<dt>Analytical Approach</dt> 
 											<dd>
-												<p>A 2023/2024 toggle allows leadership to instantly compare performance across fiscal years — enabling YoY benchmarking of visit volume, admission rates, and wait time trends without switching between separate reports.</p>
+												<p>Descriptive (volume and KPI baselines), diagnostic (wait time vs. satisfaction disconfirmation, demographic admission rate outliers), operational (heatmap-driven shift planning), and equity-aware (demographic segmentation by admission rate and race × gender cross-tab) — across five purpose-built pages, each anchored to a distinct, named business question visible in the dashboard header.</p>
 											</dd>
 										</dl>
 								</div>
@@ -152,12 +156,12 @@
 													<td>Data transformation and modeling</td>
 												</tr>
 												<tr>
-													<td>Excel</td>
-													<td>Source data preparation</td>
+													<td>Statistical Bands</td>
+													<td>6-month rolling average ±2 SD anomaly detection for volume outliers</td>
 												</tr>
 												<tr>
-													<td>Data Modeling</td>
-													<td>Star schema with fact and dimension tables</td>
+													<td>Pareto Analysis</td>
+													<td>Referral concentration logic to identify critical few departments</td>
 												</tr>
 											</tbody>
 										</table>
@@ -171,7 +175,7 @@
 									<header class="major">
 										<h2>Impact & Value</h2>
 									</header>																		
-									<p>This dashboard gives ER administrators and hospital leadership the operational visibility to move from reactive management to proactive planning. By identifying that Adults and Seniors account for the two highest ER visit segments, staffing and specialist scheduling can be aligned to actual demographic demand rather than historical assumptions. The referral breakdown quantifies the downstream burden that ER places on General Practice and Orthopedics — enabling those departments to pre-position resources accordingly. The integrated satisfaction score alongside wait time creates an accountability link between operational efficiency and patient experience, making this dashboard useful not just for clinical leadership but also for quality improvement and hospital accreditation teams.</p>
+									<p>This dashboard is built to change decisions, not just inform them. Rebuilding shift schedules around the Friday-morning and Saturday-night arrival peaks directly reduces overtime costs and ER bottlenecks. Investigating Renal's satisfaction score as a communication problem — not a wait-time problem — points leadership toward a targeted quality intervention that a blunt "reduce all wait times" directive would miss entirely. Rebalancing Team Alpha's 18× workload advantage over Team Bravo is a retention intervention disguised as a scheduling fix. And preparing General Practice and Orthopedics for growing referral concentration prevents downstream specialist bottlenecks before they become patient access failures. The dashboard's greatest value is that it consistently produces the second answer — the one that survives contact with the actual data after the first, more obvious answer fails to hold up.</p>
 								</div>
 							</section>
 
