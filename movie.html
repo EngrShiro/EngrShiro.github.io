@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>White Hat | Intelligence</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" href="images/logo.png">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="index.html" class="logo"><strong>WhiteHat</strong> <span>Intelligence</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#services">Services</a></li>
+							<li><a href="index.html#portfolio">Portfolio</a></li>
+							<li><a href="#contact" class="scrolly">Contact</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/reels.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>The Anatomy of a Hit</h1>
+							</header>
+							<div class="content">
+								<p>Deconstructing Movie Success Across Financial, Critical & <br />
+								Cultural Dimensions.</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Overview</h2>
+									</header>
+									<div class="video-container">
+										<video width="100%" autoplay muted loop playsinline>
+											<source src="videos/movie-success.mp4" type="video/mp4">
+											Your browser does not support the video tag.
+										</video>
+									</div>	
+									<p>This four-page Power BI data story analyzes 1M+ films spanning over a century (1800s–2000s) to answer a deceptively simple question: what actually makes a movie successful? Rather than building a single ranking dashboard, the project measures success through three independent lenses — Financial Performance, Critical Reception, and Cultural Reach — and reveals where they align, where they diverge, and what that divergence means for anyone trying to greenlight the next hit. The result reframes "success" from a single number into a multi-dimensional question with no single right answer.</p>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/question.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Business Question</h3>
+											</header>
+											<p>Studios, producers, and investment decision-makers routinely rely on box office revenue as the default proxy for a film's success — but revenue, critical acclaim, and cultural buzz frequently tell contradictory stories. A blockbuster tentpole can dominate box office charts while underperforming on ratings; a modestly budgeted film can outperform them both on critical reception and return efficiency. Without disentangling these dimensions, financial decisions about future productions risk optimizing for the wrong outcome entirely. This project was built to make that tension visible and quantifiable, giving anyone evaluating a film's performance a framework that doesn't collapse three different kinds of success into one misleading metric.</p>											
+										</div>
+									</div>
+								</section>								
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Key Insights & Features</h2>
+									</header>																										
+										<dl>
+											<dt>Core KPIs Tracked Across Pages</dt> 
+											<span class="image fit"><img src="images/movie-2.png" alt="" /></span>
+											<dd>
+												<p>Total Films (3,940), Total Revenue ($564.3B), Total Budget ($167.9B), Median ROI (1.8x), Profitability Rate (78.3%), Avg Rating (6.8/10), Total Profit ($396.4B), and Avg Popularity (32.9) — each with year-over-year variance to contextualize 2023 YTD performance against historical baselines.</p>
+											</dd>
+											<dt>Financial Performance Analysis</dt> 
+											<span class="image fit"><img src="images/movie-3.png" alt="" /></span>
+											<dd>
+												<p>A budget-vs-profit scatter plot reveals a moderate positive correlation (r = 0.56) between production spend and returns, while a budget-tier breakdown shows Tentpole films ($150M+) deliver the highest median profit ($338.3M) — but the accompanying narrative deliberately asks "is success really only about how much you earn?" to set up the reception-based counterargument on the next page.</p>
+											</dd>									
+											<dt>Reception & Quality Analysis</dt> 
+											<span class="image fit"><img src="images/movie-4.png" alt="" /></span>
+											<dd>
+												<p>A rating-over-time trend chart tracks audience scores by release decade, while a genre-level bubble chart plots median profit against median rating. Critically, a Minimum Votes Threshold slider filters out films with statistically unreliable ratings (based on too few votes), ensuring the "highest rated" films reflect broad consensus rather than a handful of outlier reviews.</p>
+											</dd>
+											<dt>Cultural Reach & Popularity Analysis</dt> 
+											<span class="image fit"><img src="images/movie-5.png" alt="" /></span>
+											<dd>
+												<p>A popularity-vs-profit bubble chart shows a strong positive relationship (r = 0.63) at the genre level, while a runtime-based breakdown reveals that "Epic" films (150+ minutes) generate nearly 50% higher median popularity (33.5) than short films (23.7) — suggesting audience investment in longer-form storytelling translates into greater cultural attention.</p>
+											</dd>
+											<dt>Deliberate Statistical Design Choices</dt> 
+											<dd>
+												<p>Median (not mean) is used for profit, ROI, and popularity metrics throughout the dashboard specifically to prevent blockbuster outliers from distorting what a "typical" film looks like — a methodological choice explicitly surfaced to the user rather than hidden behind the visuals, alongside a dedicated "Data Notes & Limitations" page for full analytical transparency.</p>
+											</dd>
+											<dt>Analytical Approach</dt> 
+											<dd>
+												<p>Comparative and diagnostic by design — the dashboard's central finding is that revenue and rating show only a weak correlation (r = 0.40) among top-grossing films, and popularity shows almost no relationship with rating, meaning the three lenses must be analyzed independently rather than assumed to move together.</p>
+											</dd>
+										</dl>
+								</div>
+							</section>
+						
+						<!-- Four -->
+							<section id="four">
+								<div class="col-6 col-12-medium">
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Tool</th>
+													<th>Usage</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Power BI</td>
+													<td>Dashboard design, report pages, interactivity</td>
+												</tr>
+												<tr>
+													<td>DAX</td>
+													<td>KPI calculations, YoY/MoM comparisons, margin metrics</td>
+												</tr>
+												<tr>
+													<td>Power Query (M)</td>
+													<td>Data transformation and modeling</td>
+												</tr>
+												<tr>
+													<td>Interactive Slicers</td>
+													<td>Minimum Votes Threshold slider for rating reliability filtering</td>
+												</tr>
+												<tr>
+													<td>Statistical Analysis</td>
+													<td>Pearson correlation coefficients (r) computed across financial, reception, and cultural metrics</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</section>
+						
+						<!-- Five -->
+							<section id="five">
+								<div class="inner">
+									<header class="major">
+										<h2>Impact & Value</h2>
+									</header>																		
+									<p>This project demonstrates a level of analytical discipline that goes beyond visualization — every design choice is a defensible methodological decision. Using median instead of mean prevents a handful of blockbusters from misrepresenting the "typical" film. The vote-count threshold slider protects against small-sample rating bias. And structuring the entire report around three independent, sometimes-conflicting success metrics — rather than a single leaderboard — reflects an engineering-trained instinct to question assumptions before drawing conclusions. For studios and content investors, the practical takeaway is concrete: chasing box office alone is not the same strategy as chasing critical acclaim or cultural relevance, and confusing the three leads to misallocated production budgets. For a portfolio, this project shows the ability to build analysis that holds up to scrutiny — transparent about its limitations rather than polished to hide them.</p>
+								</div>
+							</section>
+
+						<!-- Six -->
+							<section id="six">
+								<div class="inner">
+									<header class="major">
+										<h2>Check out the Dashboard here:</h2>
+									</header>
+									<ul class="actions">
+										<li><a href="https://app.fabric.microsoft.com/view?r=eyJrIjoiYmUyZGEzYTAtYTNmNS00ODIyLWJjMmItMWEwYmJhMTAzMTQ3IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9" class="button next" target="_blank">View Live Dashboard</a></li>
+									</ul>									
+								</div>
+							</section>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<section>
+								<!-- Call to Action -->
+									<h1>Let's Work Together!</h1>
+									<p>I help businesses turn raw data into actionable insights, dashboards, and data-driven strategies.</p>
+									<ul class="alt">
+										<li>Data Analysis & Visualization</li>
+										<li>Power BI & Dashboard Development</li>
+										<li>Business Intelligence Solutions</li>
+									</ul>
+									<ul class="actions">
+										<li><a href="https://forms.gle/LDc8xuLhA8etGmQP8" class="button next" target="_blank">Hire Me</a></li>
+									</ul>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="mailto:whitehatintelligence@gmail.com">whitehatintelligence@gmail.com</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>+63 956-175-9646</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>Bacolod City, Negros Occidental<br />
+										Philippines</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">								
+								<li><a href="https://www.facebook.com/whitehatintelligence" class="icon brands alt fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jvcientos" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2026 Justine Cientos · White Hat | Intelligence. All Rights Reserved.</li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -56,8 +56,72 @@
 					</section>
 
 				<!-- Main -->
+				<!-- Portfolio Filters -->
+					<section id="filters">
+					<div class="inner">
+					
+					<div class="row gtr-200">
+						
+						<div class="col-4 col-12-small">
+						<header class="major">
+							<h2>Project Filters</h2>
+						</header>
+						</div>
+
+						<!-- Tools -->
+						<div class="col-4 col-12-small">
+							<h4>Tools</h4>
+
+							<select id="tool-filter" name="tool-filter">
+								<option value="all">All Tools</option>
+								<option value="powerbi">Power BI</option>
+								<option value="excel">Excel</option>
+								<option value="sql">SQL</option>
+								<option value="python">Python</option>
+							</select>
+						</div>
+
+
+						<!-- Domain -->
+						<div class="col-4 col-12-small">
+							<h4>Domain</h4>
+
+							<select id="domain-filter" name="domain-filter">
+								<option value="all">All Domains</option>
+								<option value="energy">Energy</option>
+								<option value="hospitality">Hospitality</option>
+								<option value="healthcare">Healthcare</option>
+								<option value="manufacturing">Manufacturing</option>
+								<option value="sales">Sales</option>
+								<option value="e-commerce">E-Commerce</option>
+								<option value="fintech">FinTech</option>
+								<option value="human-resources">Human Resources</option>
+							</select>
+						</div>
+						</div>
+
+					</div>
+
+					</section>
+
 					<section  class="spotlights">
-						<section>
+						<section class="portfolio-item" data-tool="powerbi" data-domain="energy">
+							<a class="image">
+								<img src="images/grid-supply-preview.png" alt="" data-position="center center" loading="lazy"/>
+							</a>
+							<div class="content">
+								<div class="inner">
+									<header class="major">
+										<h3>Philippine Electric Power Supply</h3>
+									</header>											
+									<p>A comprehensive overview of the Philippine electric power industry, highlighting supply and demand trends, renewable energy mix, and regional generation performance.</p>
+									<ul class="actions">
+										<li><a href="grid-power.html" class="button next">Learn More</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section class="portfolio-item" data-tool="powerbi" data-domain="energy">
 							<a class="image">
 								<img src="images/fuel-prices-preview.png" alt="" data-position="center center" loading="lazy"/>
 							</a>
@@ -73,7 +137,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section class="portfolio-item" data-tool="excel" data-domain="hospitality">
 							<a class="image">
 								<img src="images/airbnb-preview.png" alt="" data-position="center center" loading="lazy"/>
 							</a>
@@ -89,7 +153,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section class="portfolio-item" data-tool="excel" data-domain="healthcare">
 							<a class="image">
 								<img src="images/hospital-preview.png" alt="" data-position="center center" loading="lazy"/>
 							</a>
@@ -105,7 +169,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section class="portfolio-item" data-tool="powerbi" data-domain="manufacturing">
 							<a class="image">
 								<img src="images/manufacturing-preview.png" alt="" data-position="center center" loading="lazy"/>
 							</a>
@@ -121,7 +185,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section class="portfolio-item" data-tool="powerbi" data-domain="sales">
 							<a class="image">
 								<img src="images/aw-sales-preview.png" alt="" data-position="center center" loading="lazy"/>
 							</a>
@@ -137,23 +201,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
-							<a class="image">
-								<img src="images/hotel-bookings-preview.png" alt="" data-position="center center" loading="lazy"/>
-							</a>
-							<div class="content">
-								<div class="inner">
-									<header class="major">
-										<h3>Hotel Bookings Statistical Report</h3>
-									</header>											
-									<p>Explores booking patterns, cancellation rates, and seasonal trends to improve occupancy forecasting.</p>
-									<ul class="actions">
-										<li><a href="hotel-bookings.html" class="button next">Learn More</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
+						<section class="portfolio-item" data-tool="sql" data-domain="e-commerce">
 							<a class="image">
 								<img src="images/e-commerce-sql-preview.png" alt="" data-position="center center" loading="lazy"/>
 							</a>
@@ -169,7 +217,23 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section class="portfolio-item" data-tool="python" data-domain="hospitality">
+							<a class="image">
+								<img src="images/hotel-bookings-preview.png" alt="" data-position="center center" loading="lazy"/>
+							</a>
+							<div class="content">
+								<div class="inner">
+									<header class="major">
+										<h3>Hotel Bookings Statistical Report</h3>
+									</header>											
+									<p>Explores booking patterns, cancellation rates, and seasonal trends to improve occupancy forecasting.</p>
+									<ul class="actions">
+										<li><a href="hotel-bookings.html" class="button next">Learn More</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section class="portfolio-item" data-tool="powerbi" data-domain="fintech">
 							<a class="image">
 								<img src="images/proj-mngt-preview.png" alt="" data-position="center center" loading="lazy"/>
 							</a>
@@ -185,7 +249,7 @@
 								</div>
 							</div>
 						</section>
-						<section>
+						<section class="portfolio-item" data-tool="powerbi" data-domain="human-resources">
 							<a class="image">
 								<img src="images/hr-analytics-preview.png" alt="" data-position="center center" loading="lazy"/>
 							</a>
@@ -269,6 +333,56 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<!-- Filter Script -->
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+
+					const toolFilter = document.getElementById("tool-filter");
+					const domainFilter = document.getElementById("domain-filter");
+					const portfolioItems = document.querySelectorAll(".portfolio-item");
+
+
+					function filterPortfolio() {
+
+						const selectedTool = toolFilter.value;
+						const selectedDomain = domainFilter.value;
+
+
+						portfolioItems.forEach(item => {
+
+							const itemTool = item.dataset.tool;
+							const itemDomain = item.dataset.domain;
+
+
+							const matchesTool =
+								selectedTool === "all" ||
+								itemTool === selectedTool;
+
+
+							const matchesDomain =
+								selectedDomain === "all" ||
+								itemDomain === selectedDomain;
+
+
+							if (matchesTool && matchesDomain) {
+								item.style.display = "";
+							} else {
+								item.style.display = "none";
+							}
+
+						});
+
+					}
+
+
+					toolFilter.addEventListener("change", filterPortfolio);
+					domainFilter.addEventListener("change", filterPortfolio);
+
+					filterPortfolio();
+
+				});
+				</script>
 
 	</body>
 </html>
